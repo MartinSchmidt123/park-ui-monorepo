@@ -1,5 +1,4 @@
-import {Button} from '../ui/button'
-import * as Card from '../ui/card'
+import {Button, Card} from '../ui'
 
 export const CardButton = () => {
 
