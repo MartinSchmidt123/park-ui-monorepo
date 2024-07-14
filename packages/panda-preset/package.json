@@ -1,0 +1,38 @@
+{
+  "name": "@park-ui-monorepo/panda-preset",
+  "version": "1.0.0",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ark-ui/anatomy": "^3.4.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.2",
+    "@pandacss/dev": "^0.42.0",
+    "@park-ui/panda-preset": "^0.38.1",
+    "tsup": "^8.1.0"
+  },
+  "peerDependencies": {
+    "@pandacss/dev": ">0.22.0"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "clean": true,
+    "dts": true,
+    "sourcemap": true,
+    "format": [
+      "esm",
+      "cjs"
+    ]
+  },
+  "main": "src/index.ts"
+}

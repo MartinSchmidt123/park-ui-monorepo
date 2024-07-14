@@ -1,0 +1,37 @@
+{
+  "name": "@park-ui-monorepo/components",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "lint": "biome lint ./src",
+    "typecheck": "tsc",
+    "build": "tsup --external @park-ui-monorepo/styled-system"
+  },
+  "dependencies": {
+    "@ark-ui/react": "^3.5.0",
+    "@park-ui-monorepo/panda-preset": "workspace:*",
+    "@park-ui-monorepo/styled-system": "workspace:*",
+    "@pandacss/dev": "^0.42.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.5.3"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "clean": true,
+    "dts": true,
+    "sourcemap": true,
+    "format": [
+      "esm",
+      "cjs"
+    ]
+  },
+  "main": "src/index.ts",
+  "devDependencies": {
+    "tsup": "8.1.0"
+  }
+}

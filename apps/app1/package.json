@@ -1,0 +1,32 @@
+{
+  "name": "@park-ui-monorepo/app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite ",
+    "build": "tsc && vite build ",
+    "lint": "biome lint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ark-ui/react": "^3.5.0",
+    "@park-ui-monorepo/components": "workspace:*",
+    "@park-ui-monorepo/panda-preset": "workspace:*",
+    "@park-ui-monorepo/styled-system": "workspace:*",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.2",
+    "@pandacss/dev": "^0.42.0",
+    "@park-ui/panda-preset": "^0.38.1",
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react-swc": "^3.7.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.3",
+    "vite-tsconfig-paths": "^4.3.2"
+  }
+}
