@@ -9,6 +9,11 @@
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
+    "pnpm -F @park-ui-monorepo/app run build": {
+      "name": "pnpm -F @park-ui-monorepo/app run build",
+      "command": "pnpm -F @park-ui-monorepo/app run build",
+      "runAtStart": true
+    },
     "pnpm -F @park-ui-monorepo/app run dev": {
       "name": "pnpm -F @park-ui-monorepo/app run dev",
       "command": "pnpm -F @park-ui-monorepo/app run dev",
